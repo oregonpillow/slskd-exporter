@@ -1,0 +1,12 @@
+services:
+  slskd-exporter:
+    build: .
+    container_name: slskd-exporter
+    restart: unless-stopped
+    ports:
+      - "9099:9099"
+    environment:
+      SLSKD_HOST: "https://slskd.example.com"
+      SLSKD_API_KEY: # optional
+      SLSKD_EXPORTER_PORT: 9099
+      SLSKD_EXPORTER_INTERVAL: 30

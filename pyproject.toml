@@ -1,0 +1,17 @@
+[project]
+name = "slskd-exporter"
+version = "0.1.0"
+description = "Prometheus exporter for the slskd Soulseek daemon REST API"
+requires-python = ">=3.12"
+dependencies = [
+    "prometheus-client>=0.21",
+    "httpx>=0.28",
+    "typer>=0.15",
+]
+
+[project.scripts]
+slskd-exporter = "slskd_exporter.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
