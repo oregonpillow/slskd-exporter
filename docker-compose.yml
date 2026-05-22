@@ -1,6 +1,6 @@
 services:
   slskd-exporter:
-    build: .
+    image: oregonpillow/slskd-exporter:latest
     container_name: slskd-exporter
     restart: unless-stopped
     ports:
@@ -10,3 +10,4 @@ services:
       SLSKD_API_KEY: # optional
       SLSKD_EXPORTER_PORT: 9099
       SLSKD_EXPORTER_INTERVAL: 30
+
