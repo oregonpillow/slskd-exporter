@@ -11,6 +11,8 @@
 
 ### Docker Compose (recommended)
 
+build locally or use image on dockerhub
+
 ```yaml
 services:
   slskd-exporter:
@@ -25,6 +27,9 @@ services:
       SLSKD_EXPORTER_PORT: 9099
       SLSKD_EXPORTER_INTERVAL: 30
 ```
+
+- https://hub.docker.com/repository/docker/oregonpillow/slskd-exporter
+
 
 ### CLI
 
