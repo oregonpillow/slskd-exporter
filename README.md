@@ -75,3 +75,7 @@ scrape_configs:
     static_configs:
       - targets: ["slskd-exporter:9099"]
 ```
+
+## References
+- Similar project: https://github.com/Arairon/slskd-stats
+- slskd: https://github.com/slskd/slskd
